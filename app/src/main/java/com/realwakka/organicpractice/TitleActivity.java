@@ -19,13 +19,15 @@ public class TitleActivity extends Activity {
 
 
    public void onClick(View v){
+       Intent intent;
        switch(v.getId()){
            case R.id.title_start:
-               Intent intent = new Intent(this,OptionActivity.class);
+               intent = new Intent(this,OptionActivity.class);
                startActivity(intent);
                break;
            case R.id.title_wrong:
-
+               intent = new Intent(this,IncorrectActivity.class);
+               startActivity(intent);
                break;
        }
    }

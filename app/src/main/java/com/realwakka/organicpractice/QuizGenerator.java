@@ -1,5 +1,7 @@
 package com.realwakka.organicpractice;
 
+import android.content.Context;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -8,8 +10,37 @@ import java.util.Random;
  */
 public class QuizGenerator {
     private final int TOTAL_QUIZ=79;
+
     private ArrayList<Integer> QuizList;
     private int CurrentOrder;
+    private Context context;
+
+    public QuizGenerator(Context context, boolean shuffle,boolean default_problem){
+        this.context = context;
+        QuizList = new ArrayList<Integer>();
+        ArrayList<Integer> list = null;
+
+        if(default_problem){
+            list = new ArrayList<Integer>();
+            for(int i=1;i<=TOTAL_QUIZ;i++){
+                list.add(i);
+            }
+        }else{
+            DataManager manager = new DataManager(context);
+            list = manager.getIncorrectList();
+        }
+
+        if(shuffle){
+            Random rand = new Random();
+            while(list.size()!=0){
+                QuizList.add(list.remove(rand.nextInt(list.size())));
+            }
+        }else{
+            QuizList.addAll(list);
+        }
+
+        CurrentOrder=-1;
+    }
     public QuizGenerator(boolean shuffle){
         this(null,shuffle);
     }
@@ -18,7 +49,7 @@ public class QuizGenerator {
 
         if(list==null){
             list = new ArrayList<Integer>();
-            for(int i=1;i<=79;i++){
+            for(int i=1;i<=TOTAL_QUIZ;i++){
                 list.add(i);
             }
         }
@@ -51,6 +82,14 @@ public class QuizGenerator {
 
     public boolean isBegin(){
         if(CurrentOrder==0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public boolean isLast(){
+        if(CurrentOrder==QuizList.size()-1){
             return true;
         }else{
             return false;

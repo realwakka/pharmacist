@@ -36,7 +36,7 @@
         <activity
             android:name="com.realwakka.organicpractice.IncorrectActivity"
             android:label="@string/title_activity_incorrect"
-            android:screenOrientation="landscape" >
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

@@ -18,16 +18,20 @@
             android:text="출제순서"
             android:textSize="50dp"/>
         <RadioGroup
+            android:id="@+id/option_order"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
+            android:checkedButton="@+id/option_order_default"
             android:orientation="horizontal">
             <RadioButton
+                android:id="@+id/option_order_default"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="순서대로"/>
             <RadioButton
+                android:id="@+id/option_order_shuffle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="섞어서"/>
@@ -39,16 +43,20 @@
             android:text="출제문제"
             android:textSize="50dp"/>
         <RadioGroup
+            android:id="@+id/option_problem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:checkedButton="@+id/option_problem_default">
             <RadioButton
+                android:id="@+id/option_problem_default"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="모든문제"/>
             <RadioButton
+                android:id="@+id/option_problem_incorrect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="오답노트만"/>

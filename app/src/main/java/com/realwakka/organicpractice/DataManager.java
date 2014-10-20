@@ -13,21 +13,57 @@ import java.util.StringTokenizer;
 public class DataManager {
     Context mContext;
     public DataManager(Context context){
-       mContext = context;
+        mContext = context;
+
+        SharedPreferences pref = mContext.getSharedPreferences("Organic", Context.MODE_PRIVATE);
+        if(!pref.contains("INCORRECT_LIST")){
+            pref.edit().putString("INCORRECT_LIST","").commit();
+        }
     }
 
+    public void removeIncorrect(int p) {
+        ArrayList<Integer> list = getIncorrectList();
+        list.remove(new Integer(p));
+        setIncorrectList(list);
+    }
+
+    public void clearIncorrectList(){
+        SharedPreferences pref = mContext.getSharedPreferences("Organic", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+
+        editor.putString("INCORRECT_LIST","");
+        editor.commit();
+    }
+
+    public boolean isContains(int i){
+        return getIncorrectList().contains(new Integer(i));
+    }
 
     public ArrayList<Integer> getIncorrectList(){
         SharedPreferences pref = mContext.getSharedPreferences("Organic", Context.MODE_PRIVATE);
+        String list = pref.getString("INCORRECT_LIST",null);
 
-        String ilist = pref.getString("INCORRECT_LIST",null);
-
-        if(ilist!=null){
-            return getArrayFromString(ilist);
+        if(list!=null){
+            return getArrayFromString(list);
         }else{
             return null;
         }
+    }
 
+    public void addIncorrect(int problem){
+        ArrayList<Integer> list = getIncorrectList();
+        list.add(problem);
+        setIncorrectList(list);
+    }
+
+    public void setIncorrectList(ArrayList<Integer> list){
+        SharedPreferences pref = mContext.getSharedPreferences("Organic", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+
+
+        String str = getStringFromArray(list);
+        editor.putString("INCORRECT_LIST",str);
+        editor.commit();
     }
 
     private ArrayList<Integer> getArrayFromString(String str){
@@ -48,7 +84,5 @@ public class DataManager {
         }
         return ret;
     }
-
-
 
 }

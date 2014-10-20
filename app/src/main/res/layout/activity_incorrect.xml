@@ -9,5 +9,23 @@
     tools:context="com.realwakka.organicpractice.IncorrectActivity">
 
 
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/incorrect_list"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/incorrect_remove" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="모두 삭제하기"
+        android:id="@+id/incorrect_remove"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"/>
+
 
 </RelativeLayout>

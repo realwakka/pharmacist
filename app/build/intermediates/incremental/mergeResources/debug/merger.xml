@@ -2,89 +2,74 @@
 <merger version="2" >
 
     <dataSet config="main" >
-        <source path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res" >
+        <source path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res" >
             <file
                 name="ic_launcher"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-hdpi/ic_launcher.png"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-hdpi\ic_launcher.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
-                qualifiers="xxhdpi-v4"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-mdpi\ic_launcher.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\ic_launcher.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="activity_incorrect"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/layout/activity_incorrect.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="activity_title"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/layout/activity_title.xml"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\layout\activity_incorrect.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_main"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/layout/activity_main.xml"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\layout\activity_main.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_option"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/layout/activity_option.xml"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\layout\activity_option.xml"
                 qualifiers=""
                 type="layout" />
             <file
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/values-w820dp/dimens.xml"
-                qualifiers="w820dp-v13" >
-                <dimen name="activity_horizontal_margin" >64dp
-                </dimen>
-            </file>
-            <file
-                name="ic_launcher"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-mdpi/ic_launcher.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="main"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/menu/main.xml"
+                name="activity_title"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\layout\activity_title.xml"
                 qualifiers=""
-                type="menu" />
+                type="layout" />
             <file
                 name="incorrect"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/menu/incorrect.xml"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\menu\incorrect.xml"
                 qualifiers=""
                 type="menu" />
             <file
-                name="title"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/menu/title.xml"
+                name="main"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\menu\main.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="option"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/menu/option.xml"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\menu\option.xml"
                 qualifiers=""
                 type="menu" />
             <file
-                name="ic_launcher"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xhdpi/ic_launcher.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
+                name="title"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\menu\title.xml"
+                qualifiers=""
+                type="menu" />
             <file
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/values/styles.xml"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\values\dimens.xml"
                 qualifiers="" >
-
-                <style
-                    name="AppTheme"
-                    parent="android:Theme.Holo.Light.NoActionBar" >
-                    <item name="android:screenOrientation">
-landscape
-                    </item>
-                </style>
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
             </file>
             <file
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/values/strings.xml"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\values\strings.xml"
                 qualifiers="" >
-                <string name="title_activity_title" >TitleActivity
+                <string name="title_activity_title" >Organic Practice
                 </string>
                 <string name="action_settings" >Settings
                 </string>
@@ -100,809 +85,824 @@ landscape
                 </string>
             </file>
             <file
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/values/dimens.xml"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\values\styles.xml"
                 qualifiers="" >
-                <dimen name="activity_horizontal_margin" >16dp
-                </dimen>
-                <dimen name="activity_vertical_margin" >16dp
+
+                <style
+                    name="AppTheme"
+                    parent="android:Theme.Holo.Light.NoActionBar" >
+                    <item name="android:screenOrientation">
+landscape
+                    </item>
+                </style>
+            </file>
+            <file
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\values-w820dp\dimens.xml"
+                qualifiers="w820dp-v13" >
+                <dimen name="activity_horizontal_margin" >64dp
                 </dimen>
             </file>
             <file
-                name="problem_39"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_39.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_20"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_20.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_2"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_2.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_3"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_3.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_69"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_69.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_78"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_78.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_46"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_46.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_57"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_57.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_48"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_48.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_37"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_37.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_54"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_54.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_19"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_19.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_21"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_21.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_61"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_61.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_75"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_75.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_69"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_69.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_33"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_33.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_10"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_10.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_58"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_58.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_37"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_37.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_51"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_51.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_41"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_41.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_7"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_7.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_16"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_16.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_38"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_38.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_30"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_30.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_20"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_20.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_55"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_55.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_77"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_77.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_47"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_47.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_78"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_78.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_17"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_17.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_6"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_6.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_5"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_5.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_42"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_42.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_52"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_52.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_3"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_3.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_9"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_9.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_58"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_58.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
+                name="item_incorrect"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\layout\item_incorrect.xml"
+                qualifiers=""
+                type="layout" />
             <file
                 name="problem_40"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_40.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_71"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_71.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_30"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_30.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_62"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_62.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_65"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_65.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_11"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_11.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_66"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_66.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_12"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_12.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_77"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_77.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_4"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_4.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_31"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_31.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_27"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_27.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_43"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_43.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_11"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_11.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_45"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_45.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_79"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_79.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_51"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_51.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_68"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_68.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_49"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_49.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_16"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_16.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_64"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_64.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_64"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_64.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_71"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_71.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_54"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_54.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_8"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_8.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_79"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_79.png"
-                qualifiers="xxhdpi-v4"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_40.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="answer_40"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_40.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_55"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_55.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_50"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_50.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_38"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_38.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_22"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_22.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_5"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_5.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_70"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_70.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_74"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_74.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_47"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_47.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_72"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_72.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_28"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_28.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_62"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_62.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_42"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_42.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_63"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_63.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_65"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_65.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_18"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_18.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_26"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_26.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_32"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_32.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_57"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_57.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_73"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_73.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_43"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_43.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_23"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_23.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_36"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_36.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_35"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_35.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_56"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_56.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_44"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_44.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_73"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_73.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_35"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_35.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_76"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_76.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_59"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_59.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_15"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_15.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_63"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_63.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_61"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_61.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_21"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_21.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_60"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_60.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_39"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_39.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_18"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_18.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_14"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_14.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_13"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_13.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_2"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_2.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_26"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_26.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_7"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_7.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_22"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_22.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_33"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_33.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_44"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_44.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_68"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_68.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_56"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_56.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_28"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_28.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_48"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_48.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_32"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_32.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_60"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_60.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_29"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_29.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_25"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_25.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_19"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_19.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_36"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_36.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_67"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_67.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_31"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_31.png"
-                qualifiers="xxhdpi-v4"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_40.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="answer_50"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_50.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_76"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_76.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_6"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_6.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_67"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_67.png"
-                qualifiers="xxhdpi-v4"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_50.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="answer_34"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_34.png"
-                qualifiers="xxhdpi-v4"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_34.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="answer_23"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_23.png"
-                qualifiers="xxhdpi-v4"
+                name="answer_76"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_76.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="answer_4"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_4.png"
-                qualifiers="xxhdpi-v4"
+                name="problem_63"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_63.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="problem_29"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_29.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_34"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_34.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_13"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_13.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_24"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_24.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_45"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_45.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_46"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_46.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_70"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_70.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="problem_14"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_14.png"
-                qualifiers="xxhdpi-v4"
-                type="drawable" />
-            <file
-                name="answer_25"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_25.png"
-                qualifiers="xxhdpi-v4"
+                name="answer_77"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_77.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="problem_49"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_49.png"
-                qualifiers="xxhdpi-v4"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_49.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="problem_15"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_15.png"
-                qualifiers="xxhdpi-v4"
+                name="problem_24"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_24.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="answer_8"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_8.png"
-                qualifiers="xxhdpi-v4"
+                name="answer_79"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_79.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="answer_53"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_53.png"
-                qualifiers="xxhdpi-v4"
+                name="problem_44"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_44.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="problem_12"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_12.png"
-                qualifiers="xxhdpi-v4"
+                name="answer_28"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_28.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="problem_66"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_66.png"
-                qualifiers="xxhdpi-v4"
+                name="problem_64"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_64.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="answer_75"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_75.png"
-                qualifiers="xxhdpi-v4"
+                name="answer_74"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_74.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="problem_10"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_10.png"
-                qualifiers="xxhdpi-v4"
+                name="answer_11"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_11.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="answer_1"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_1.png"
-                qualifiers="xxhdpi-v4"
+                name="problem_2"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_2.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="answer_24"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_24.png"
-                qualifiers="xxhdpi-v4"
+                name="problem_18"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_18.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="problem_17"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_17.png"
-                qualifiers="xxhdpi-v4"
+                name="problem_11"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_11.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="answer_59"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_59.png"
-                qualifiers="xxhdpi-v4"
+                name="answer_14"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_14.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="answer_72"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_72.png"
-                qualifiers="xxhdpi-v4"
+                name="answer_37"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_37.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="problem_74"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_74.png"
-                qualifiers="xxhdpi-v4"
+                name="answer_48"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_48.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="answer_9"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_9.png"
-                qualifiers="xxhdpi-v4"
+                name="problem_48"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_48.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="problem_1"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_1.png"
-                qualifiers="xxhdpi-v4"
+                name="problem_72"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_72.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="problem_27"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_27.png"
-                qualifiers="xxhdpi-v4"
+                name="problem_6"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_6.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_45"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_45.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_59"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_59.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_41"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_41.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_4"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_4.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_33"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_33.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_52"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_52.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_39"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_39.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_9"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_10"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_10.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="problem_53"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_53.png"
-                qualifiers="xxhdpi-v4"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_53.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                name="answer_41"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/answer_41.png"
-                qualifiers="xxhdpi-v4"
+                name="problem_16"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_16.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_21"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_21.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_43"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_43.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_75"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_75.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_1"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_1.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_59"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_59.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_69"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_69.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_13"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_13.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_71"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_71.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_57"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_57.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_33"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_33.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_68"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_68.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_42"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_42.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_51"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_51.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_66"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_66.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_54"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_54.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_28"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_28.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_16"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_16.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_20"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_20.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_35"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_35.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_61"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_61.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_74"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_74.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_20"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_20.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_58"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_58.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_4"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_4.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_50"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_50.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_34"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_34.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="problem_52"
-                path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/drawable-xxhdpi/problem_52.png"
-                qualifiers="xxhdpi-v4"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_52.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_12"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_12.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_78"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_78.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_1"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_1.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_73"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_73.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_7"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_7.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_19"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_19.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_44"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_44.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_19"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_19.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_42"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_42.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_13"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_13.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_10"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_10.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_57"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_57.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_53"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_53.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_23"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_23.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_41"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_41.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_51"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_51.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_22"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_22.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_66"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_66.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_60"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_60.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_46"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_46.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_36"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_36.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_47"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_47.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_8"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_8.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_67"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_67.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_30"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_30.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_12"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_12.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_63"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_63.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_5"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_5.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_6"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_6.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_3"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_3.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_70"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_70.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_22"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_22.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_78"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_78.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_56"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_56.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_27"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_27.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_15"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_15.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_75"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_75.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_58"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_58.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_47"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_47.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_71"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_71.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_29"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_29.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_26"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_26.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_32"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_32.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_70"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_70.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_49"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_49.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_25"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_25.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_38"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_38.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_65"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_65.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_55"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_55.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_46"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_46.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_17"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_17.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_62"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_62.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_18"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_18.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_56"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_56.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_67"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_67.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_27"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_27.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_72"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_72.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_17"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_17.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_29"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_29.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_9"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_60"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_60.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_15"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_15.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_24"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_24.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_38"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_38.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_64"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_64.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_55"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_55.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_68"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_68.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_62"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_62.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_26"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_26.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_39"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_39.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_69"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_69.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_3"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_3.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_31"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_31.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_54"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_54.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_37"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_37.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_79"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_79.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_25"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_25.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_77"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_77.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_30"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_30.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_73"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_73.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_8"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_8.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_61"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_61.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_45"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_45.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_36"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_36.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_35"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_35.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_7"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_7.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_76"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_76.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_14"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_14.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_43"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_43.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_23"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_23.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_65"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_65.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_32"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_32.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_2"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_2.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_5"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_5.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="problem_21"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\problem_21.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="answer_31"
+                path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\main\res\drawable-xhdpi\answer_31.png"
+                qualifiers="xhdpi-v4"
                 type="drawable" />
         </source>
-        <source path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/build/generated/res/rs/debug" />
-        <source path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/build/generated/res/generated/debug" />
+        <source path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\build\generated\res\rs\debug" />
+        <source path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\build\generated\res\generated\debug" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/debug/res" />
+        <source path="C:\Users\UCLAB_T60\AndroidStudioProjects\OrganicPractice\app\src\debug\res" />
     </dataSet>
 
 </merger>

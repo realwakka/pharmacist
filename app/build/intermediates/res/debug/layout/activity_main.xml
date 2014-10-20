@@ -13,5 +13,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:onClick="onClick"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오답노트"
+        android:onClick="onClick"
+        android:id="@+id/main_incorrect"
+        android:layout_alignBottom="@+id/main_image"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
-<!-- From: file:/home/realwakka/AndroidStudioProjects/OrganicPractice/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/C:/Users/UCLAB_T60/AndroidStudioProjects/OrganicPractice/app/src/main/res/layout/activity_main.xml -->
