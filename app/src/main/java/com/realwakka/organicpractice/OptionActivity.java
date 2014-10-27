@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class OptionActivity extends Activity {
     RadioGroup mProblemType;
     RadioGroup mOrderType;
+    RadioGroup mProblemGroup;
     DataManager mDataManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,8 @@ public class OptionActivity extends Activity {
 
         mProblemType = (RadioGroup) findViewById(R.id.option_problem);
         mOrderType = (RadioGroup) findViewById(R.id.option_order);
+        mProblemGroup = (RadioGroup) findViewById(R.id.option_group);
+
         mDataManager = new DataManager(this);
     }
     private boolean checkList(){
