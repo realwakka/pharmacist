@@ -8,10 +8,37 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:gravity="center"
     tools:context="com.realwakka.organicpractice.OptionActivity">
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="출제과목"
+            android:textSize="50dp"/>
+        <RadioGroup
+            android:id="@+id/option_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:checkedButton="@+id/option_group_organic"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/option_group_organic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="유기"/>
+            <RadioButton
+                android:id="@+id/option_group_sang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="생약학"/>
+        </RadioGroup>
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -72,4 +99,4 @@
 
 
 </RelativeLayout>
-<!-- From: file:/home/realwakka/AndroidStudioProjects/pharmacist/app/src/main/res/layout/activity_option.xml -->
+<!-- From: file:/C:/Users/wakka/AndroidStudioProjects/pharmacist/app/src/main/res/layout/activity_option.xml -->

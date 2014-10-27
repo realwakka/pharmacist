@@ -21,7 +21,9 @@ public class MainActivity extends Activity {
     private STATE mSTATE=STATE.PROBLEM;
     private int mCurrentNumber;
     private QuizGenerator mGenerator;
-    private DataManager mDataManager;
+    private IncorrectDataSource mDataSource;
+    private PracticeOption mOption;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,25 +31,13 @@ public class MainActivity extends Activity {
         mImageView = (ImageView) findViewById(R.id.main_image);
         mIncorrectBox = (CheckBox) findViewById(R.id.main_incorrect);
 
-        mDataManager = new DataManager(this);
+        mDataSource = new IncorrectDataSource(this);
 
         Intent intent = getIntent();
 
-        boolean shuffle = false,default_problem=true;
+        mOption = (PracticeOption)intent.getSerializableExtra("PRACTICE_OPTION");
 
-        if(intent.getIntExtra("ORDER_TYPE",1)==R.id.option_order_default){
-            shuffle = false;
-        }else{
-            shuffle = true;
-        }
-
-        if(intent.getIntExtra("PROBLEM_TYPE",1)==R.id.option_problem_default){
-            default_problem = true;
-        }else{
-            default_problem = false;
-        }
-
-        mGenerator = new QuizGenerator(this,shuffle,default_problem);
+        mGenerator = new QuizGenerator(this,mOption.isShuffle(),!mOption.isIncorrect_list());
 
         mCurrentNumber = mGenerator.getNextNumber();
         setProblemNum(mCurrentNumber);
@@ -56,8 +46,7 @@ public class MainActivity extends Activity {
     private void setProblemNum(int n){
         int resId = getResources().getIdentifier("problem_"+n, "drawable", getPackageName());
         mImageView.setImageResource(resId);
-
-        mIncorrectBox.setChecked(mDataManager.isContains(mCurrentNumber));
+        mIncorrectBox.setChecked(mDataSource.isContains(mCurrentNumber));
     }
 
     private void setAnswerNum(int n){
@@ -87,12 +76,11 @@ public class MainActivity extends Activity {
     private void clickIncorrect(){
         if(mIncorrectBox.isChecked()){
             Toast.makeText(this,"추가되었습니다",Toast.LENGTH_SHORT).show();
-            mDataManager.addIncorrect(mCurrentNumber);
+            mDataSource.addIncorrect(mCurrentNumber,mOption.getProblem_group());
         }else{
             Toast.makeText(this,"제거되었습니다",Toast.LENGTH_SHORT).show();
-            mDataManager.removeIncorrect(mCurrentNumber);
+            mDataSource.deleteIncorrect(mCurrentNumber,mOption.getProblem_group());
         }
-
     }
     public void onClick(View v){
         switch(v.getId()){

@@ -32,7 +32,7 @@ public class IncorrectDataSource {
         dbHelper.close();
     }
 
-    public Incorrect createComment(int comment,int group) {
+    public Incorrect addIncorrect(int comment,int group) {
         ContentValues values = new ContentValues();
         values.put(DataHelper.COLUMN_PROBLEM, comment);
         values.put(DataHelper.COLUMN_GROUP, group);
@@ -44,17 +44,14 @@ public class IncorrectDataSource {
                 null, null, null);
         cursor.moveToFirst();
 
-
         Incorrect newComment = cursorToIncorrect(cursor);
         cursor.close();
         return newComment;
     }
 
-    public void deleteComment(Incorrect comment) {
-        long id = comment.getId();
-        System.out.println("Comment deleted with id: " + id);
-        database.delete(DataHelper.TABLE_INCORRECT, DataHelper.COLUMN_ID
-                + " = " + id, null);
+    public void deleteIncorrect(int problem,int group) {
+        database.delete(DataHelper.TABLE_INCORRECT, DataHelper.COLUMN_PROBLEM
+                + " = " + problem, null);
     }
 
     public List<Incorrect> getIncorrectByGroup(int group) {
@@ -74,6 +71,24 @@ public class IncorrectDataSource {
         cursor.close();
         return comments;
     }
+
+    public boolean isContains(int problem){
+        List<Incorrect> comments = new ArrayList<Incorrect>();
+
+        Cursor cursor = database.query(DataHelper.TABLE_INCORRECT,
+                allColumns, DataHelper.COLUMN_PROBLEM+"=?", new String[]{problem+""}, null, null, null);
+
+        boolean ret = true;
+        if(cursor.getCount()==0){
+            ret = false;
+        }else{
+            ret = true;
+        }
+        cursor.close();
+
+        return ret;
+    }
+
 
     public List<Incorrect> getAllIncorrect() {
         List<Incorrect> comments = new ArrayList<Incorrect>();

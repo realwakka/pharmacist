@@ -39,4 +39,10 @@ public class Incorrect {
     public void setGroup(int group) {
         this.group = group;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        Incorrect incorrect = (Incorrect)o;
+        return problem==incorrect.getProblem() && group==incorrect.getGroup();
+    }
 }

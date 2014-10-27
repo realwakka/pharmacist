@@ -18,4 +18,4 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/incorrect_problem" />
 </RelativeLayout>
-<!-- From: file:/home/realwakka/AndroidStudioProjects/pharmacist/app/src/main/res/layout/item_incorrect.xml -->
+<!-- From: file:/C:/Users/wakka/AndroidStudioProjects/pharmacist/app/src/main/res/layout/item_incorrect.xml -->

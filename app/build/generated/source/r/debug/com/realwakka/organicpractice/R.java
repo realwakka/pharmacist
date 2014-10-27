@@ -428,22 +428,25 @@ public final class R {
         public static final int problem_9=0x7f02019a;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000f;
-        public static final int incorrect_answer=0x7f08000e;
+        public static final int action_settings=0x7f080012;
+        public static final int incorrect_answer=0x7f080011;
         public static final int incorrect_list=0x7f080000;
-        public static final int incorrect_problem=0x7f08000d;
+        public static final int incorrect_problem=0x7f080010;
         public static final int incorrect_remove=0x7f080001;
         public static final int main_image=0x7f080002;
         public static final int main_incorrect=0x7f080003;
-        public static final int option_order=0x7f080004;
-        public static final int option_order_default=0x7f080005;
-        public static final int option_order_shuffle=0x7f080006;
-        public static final int option_problem=0x7f080007;
-        public static final int option_problem_default=0x7f080008;
-        public static final int option_problem_incorrect=0x7f080009;
-        public static final int option_start=0x7f08000a;
-        public static final int title_start=0x7f08000b;
-        public static final int title_wrong=0x7f08000c;
+        public static final int option_group=0x7f080004;
+        public static final int option_group_organic=0x7f080005;
+        public static final int option_group_sang=0x7f080006;
+        public static final int option_order=0x7f080007;
+        public static final int option_order_default=0x7f080008;
+        public static final int option_order_shuffle=0x7f080009;
+        public static final int option_problem=0x7f08000a;
+        public static final int option_problem_default=0x7f08000b;
+        public static final int option_problem_incorrect=0x7f08000c;
+        public static final int option_start=0x7f08000d;
+        public static final int title_start=0x7f08000e;
+        public static final int title_wrong=0x7f08000f;
     }
     public static final class layout {
         public static final int activity_incorrect=0x7f030000;

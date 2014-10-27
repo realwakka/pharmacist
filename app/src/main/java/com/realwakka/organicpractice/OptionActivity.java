@@ -14,7 +14,10 @@ public class OptionActivity extends Activity {
     RadioGroup mProblemType;
     RadioGroup mOrderType;
     RadioGroup mProblemGroup;
+
+    IncorrectDataSource mDataSource;
     DataManager mDataManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,21 +27,40 @@ public class OptionActivity extends Activity {
         mOrderType = (RadioGroup) findViewById(R.id.option_order);
         mProblemGroup = (RadioGroup) findViewById(R.id.option_group);
 
-        mDataManager = new DataManager(this);
+        mDataSource = new IncorrectDataSource(this);
+
+
     }
+
+    private int getIndexOfGroup(RadioGroup radioButtonGroup){
+        int radioButtonID = radioButtonGroup.getCheckedRadioButtonId();
+        View radioButton = radioButtonGroup.findViewById(radioButtonID);
+        int idx = radioButtonGroup.indexOfChild(radioButton);
+        return idx;
+    }
+
     private boolean checkList(){
-        if(mProblemType.getCheckedRadioButtonId()==R.id.option_problem_incorrect && mDataManager.getIncorrectList().isEmpty()){
+        if(mProblemType.getCheckedRadioButtonId()==R.id.option_problem_incorrect
+                && mDataSource.getIncorrectByGroup(getIndexOfGroup(mProblemGroup)).isEmpty()){
             return false;
         }else{
             return true;
         }
     }
+
+    private PracticeOption getPracticeOption(){
+        PracticeOption option = new PracticeOption(getIndexOfGroup(mProblemGroup)
+                ,getIndexOfGroup(mOrderType)==1,getIndexOfGroup(mProblemGroup)==1);
+        return option;
+    }
+
+
+
     public void onClick(View view){
         switch(view.getId()){
             case R.id.option_start:
                 Intent intent = new Intent(this,MainActivity.class);
-                intent.putExtra("PROBLEM_TYPE",mProblemType.getCheckedRadioButtonId());
-                intent.putExtra("ORDER_TYPE",mOrderType.getCheckedRadioButtonId());
+                intent.putExtra("PRACTICE_OPTION",getPracticeOption());
 
                 if(checkList()){
                     startActivity(intent);
@@ -46,8 +68,6 @@ public class OptionActivity extends Activity {
                 }else{
                     Toast.makeText(this,"오답노트가 없습니다",Toast.LENGTH_LONG).show();
                 }
-
-
 
                 break;
         }
