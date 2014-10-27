@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/C:/Users/UCLAB_T60/AndroidStudioProjects/OrganicPractice/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/home/realwakka/AndroidStudioProjects/pharmacist/app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/UCLAB_T60/AndroidStudioProjects/OrganicPractice/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/realwakka/AndroidStudioProjects/pharmacist/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="action_settings">Settings</string>
@@ -16,7 +16,7 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_option">OptionActivity</string>
     <string name="title_activity_title">Organic Practice</string>
-    <!-- From: file:/C:/Users/UCLAB_T60/AndroidStudioProjects/OrganicPractice/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/home/realwakka/AndroidStudioProjects/pharmacist/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
     <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
