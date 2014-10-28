@@ -11,10 +11,17 @@ import java.util.Random;
 public class QuizGenerator {
     private final int TOTAL_QUIZ=79;
 
+    private final int[] QUIZ_CNT= new int[]{79,126};
     private ArrayList<Integer> QuizList;
     private int CurrentOrder;
     private Context context;
 
+    private PracticeOption mOption;
+
+
+    public QuizGenerator(PracticeOption option){
+        mOption = option;
+    }
     public QuizGenerator(Context context, boolean shuffle,boolean default_problem){
         this.context = context;
         QuizList = new ArrayList<Integer>();

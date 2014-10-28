@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -74,9 +75,11 @@ public class IncorrectDataSource {
 
     public boolean isContains(int problem){
         List<Incorrect> comments = new ArrayList<Incorrect>();
-
+        Log.d("IncorrectDataSource","problem"+problem);
         Cursor cursor = database.query(DataHelper.TABLE_INCORRECT,
                 allColumns, DataHelper.COLUMN_PROBLEM+"=?", new String[]{problem+""}, null, null, null);
+
+
 
         boolean ret = true;
         if(cursor.getCount()==0){

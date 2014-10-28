@@ -30,8 +30,13 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         mImageView = (ImageView) findViewById(R.id.main_image);
         mIncorrectBox = (CheckBox) findViewById(R.id.main_incorrect);
+        try{
+            mDataSource = new IncorrectDataSource(this);
+            mDataSource.open();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
 
-        mDataSource = new IncorrectDataSource(this);
 
         Intent intent = getIntent();
 

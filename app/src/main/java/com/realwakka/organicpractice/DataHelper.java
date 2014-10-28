@@ -13,7 +13,7 @@ public class DataHelper extends SQLiteOpenHelper {
 
     public static final String COLUMN_ID = "_id";
     public static final String COLUMN_PROBLEM = "problem";
-    public static final String COLUMN_GROUP="group";
+    public static final String COLUMN_GROUP="problem_group";
 
     private static final int DB_VER=1;
     private static final String DB_CREATE="create table "+TABLE_INCORRECT+" ( "+COLUMN_ID+" integer primary key autoincrement, " + COLUMN_PROBLEM

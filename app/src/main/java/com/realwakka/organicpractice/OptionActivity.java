@@ -27,7 +27,13 @@ public class OptionActivity extends Activity {
         mOrderType = (RadioGroup) findViewById(R.id.option_order);
         mProblemGroup = (RadioGroup) findViewById(R.id.option_group);
 
-        mDataSource = new IncorrectDataSource(this);
+
+        try{
+            mDataSource = new IncorrectDataSource(this);
+            mDataSource.open();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
 
 
     }
