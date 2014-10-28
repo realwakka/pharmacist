@@ -3,6 +3,7 @@ package com.realwakka.organicpractice;
 import android.content.Context;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -20,7 +21,30 @@ public class QuizGenerator {
 
 
     public QuizGenerator(PracticeOption option){
+
         mOption = option;
+        QuizList = new ArrayList<Integer>();
+
+        int count = QUIZ_CNT[mOption.getProblem_group()];
+
+        for(int i=1;i<=count;i++)
+            QuizList.add(i);
+
+
+
+
+    }
+    private void shuffleList(List<Integer> list){
+
+        List<Integer> tmp = new ArrayList<Integer>();
+        tmp.addAll(list);
+
+        list.clear();
+
+        Random rand = new Random();
+        while(!tmp.isEmpty()){
+            list.add(tmp.remove(rand.nextInt(tmp.size())));
+        }
     }
     public QuizGenerator(Context context, boolean shuffle,boolean default_problem){
         this.context = context;

@@ -17,18 +17,20 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class IncorrectActivity extends Activity {
     ListView mListView;
-    DataManager mDataManager;
+
+    IncorrectDataSource mDataSource;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_incorrect);
 
         mListView = (ListView)findViewById(R.id.incorrect_list);
-        mDataManager = new DataManager(this);
+        mDataSource = new IncorrectDataSource(this);
 
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -41,22 +43,22 @@ public class IncorrectActivity extends Activity {
 
     }
     private void loadIncorrectList(){
-        IncorrectAdapter adapter = new IncorrectAdapter(this,mDataManager.getIncorrectList());
+        IncorrectAdapter adapter = new IncorrectAdapter(this,mDataSource.getAllIncorrect());
         mListView.setAdapter(adapter);
     }
     public void onClick(View v){
         switch(v.getId()){
             case R.id.incorrect_remove:
-                mDataManager.clearIncorrectList();
+//                mDataManager.clearIncorrectList();
                 loadIncorrectList();
                 break;
         }
     }
     
     private class IncorrectAdapter extends BaseAdapter{
-        ArrayList<Integer> list;
+        List<Incorrect> list;
         Context context;
-        public IncorrectAdapter(Context context,ArrayList<Integer> list){
+        public IncorrectAdapter(Context context,List<Incorrect> list){
             this.context = context;
             this.list = list;
         }
@@ -72,7 +74,7 @@ public class IncorrectActivity extends Activity {
 
         @Override
         public long getItemId(int i) {
-            return list.get(i);
+            return list.get(i).getId();
         }
 
         @Override
@@ -84,7 +86,7 @@ public class IncorrectActivity extends Activity {
                 ImageView answer = (ImageView) v.findViewById(R.id.incorrect_answer);
                 ImageView problem = (ImageView) v.findViewById(R.id.incorrect_problem);
 
-                int p = list.get(i);
+                int p = list.get(i).getProblem();
                 int problem_resId = getResources().getIdentifier("problem_"+p, "drawable", getPackageName());
                 problem.setImageResource(problem_resId);
 
