@@ -2,6 +2,7 @@ package com.realwakka.organicpractice;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,7 +17,8 @@ public class OptionActivity extends Activity {
     RadioGroup mProblemGroup;
 
     IncorrectDataSource mDataSource;
-    DataManager mDataManager;
+
+    private final String JSON_KEY="PRACTICE_OPTION";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,7 @@ public class OptionActivity extends Activity {
         mOrderType = (RadioGroup) findViewById(R.id.option_order);
         mProblemGroup = (RadioGroup) findViewById(R.id.option_group);
 
+        loadOption();
 
         try{
             mDataSource = new IncorrectDataSource(this);
@@ -56,10 +59,50 @@ public class OptionActivity extends Activity {
 
     private PracticeOption getPracticeOption(){
         PracticeOption option = new PracticeOption(getIndexOfGroup(mProblemGroup)
-                ,getIndexOfGroup(mOrderType)==1,getIndexOfGroup(mProblemGroup)==1);
+                ,getIndexOfGroup(mOrderType)==1,getIndexOfGroup(mProblemType)==1);
         return option;
     }
 
+    private void saveOption(PracticeOption option){
+        SharedPreferences pref = getSharedPreferences("PHARMACIST",MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putString(JSON_KEY,option.toJson());
+        editor.commit();
+    }
+
+    private void loadOption(){
+        SharedPreferences pref = getSharedPreferences("PHARMACIST",MODE_PRIVATE);
+
+        String json = pref.getString(JSON_KEY,null);
+
+        if(json!=null){
+            PracticeOption option = PracticeOption.fromJson(json);
+
+            mapOption(option);
+        }
+    }
+
+    private void mapOption(PracticeOption option){
+        switch(option.getProblem_group()){
+            case 0:
+                mProblemGroup.check(R.id.option_group_organic);
+                break;
+            case 1:
+                mProblemGroup.check(R.id.option_group_sang);
+                break;
+        }
+        if(option.isShuffle()){
+            mOrderType.check(R.id.option_order_shuffle);
+        }else{
+            mOrderType.check(R.id.option_order_default);
+        }
+
+        if(option.isIncorrect_list()){
+            mProblemType.check(R.id.option_problem_incorrect);
+        }else{
+            mProblemType.check(R.id.option_problem_default);
+        }
+    }
 
 
     public void onClick(View view){

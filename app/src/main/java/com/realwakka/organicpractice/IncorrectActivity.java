@@ -30,7 +30,14 @@ public class IncorrectActivity extends Activity {
         setContentView(R.layout.activity_incorrect);
 
         mListView = (ListView)findViewById(R.id.incorrect_list);
-        mDataSource = new IncorrectDataSource(this);
+
+        try{
+            mDataSource = new IncorrectDataSource(this);
+            mDataSource.open();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
 
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

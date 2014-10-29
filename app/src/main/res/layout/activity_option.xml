@@ -12,7 +12,8 @@
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-        <TableRow>
+        <TableRow
+            android:gravity="center">
             <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,7 +40,7 @@
             </RadioGroup>
         </TableRow>
 
-        <TableRow>
+        <TableRow android:gravity="center">
             <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -66,7 +67,7 @@
             </RadioGroup>
         </TableRow>
 
-        <TableRow>
+        <TableRow android:gravity="center">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

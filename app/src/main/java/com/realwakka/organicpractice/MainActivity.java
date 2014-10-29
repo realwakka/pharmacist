@@ -42,13 +42,14 @@ public class MainActivity extends Activity {
 
         mOption = (PracticeOption)intent.getSerializableExtra("PRACTICE_OPTION");
 
-        mGenerator = new QuizGenerator(this,mOption.isShuffle(),!mOption.isIncorrect_list());
+        mGenerator = new QuizGenerator(mOption,mDataSource);
 
         mCurrentNumber = mGenerator.getNextNumber();
         setProblemNum(mCurrentNumber);
 
     }
     private void setProblemNum(int n){
+        Log.d("MainActivity","load problem "+n);
         int resId = getResources().getIdentifier("problem_"+n, "drawable", getPackageName());
         mImageView.setImageResource(resId);
         mIncorrectBox.setChecked(mDataSource.isContains(mCurrentNumber));
