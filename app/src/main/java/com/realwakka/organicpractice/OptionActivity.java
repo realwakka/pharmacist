@@ -41,6 +41,12 @@ public class OptionActivity extends Activity {
 
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        saveOption(getPracticeOption());
+    }
+
     private int getIndexOfGroup(RadioGroup radioButtonGroup){
         int radioButtonID = radioButtonGroup.getCheckedRadioButtonId();
         View radioButton = radioButtonGroup.findViewById(radioButtonID);

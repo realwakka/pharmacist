@@ -32,7 +32,10 @@ public class IncorrectDataSource {
     public void close() {
         dbHelper.close();
     }
-
+    public boolean deleteAllIncorrect(){
+        database.delete(DataHelper.TABLE_INCORRECT, null, null);
+        return true;
+    }
     public Incorrect addIncorrect(int comment,int group) {
         ContentValues values = new ContentValues();
         values.put(DataHelper.COLUMN_PROBLEM, comment);

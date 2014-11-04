@@ -57,6 +57,7 @@ public class IncorrectActivity extends Activity {
         switch(v.getId()){
             case R.id.incorrect_remove:
 //                mDataManager.clearIncorrectList();
+                mDataSource.deleteAllIncorrect();
                 loadIncorrectList();
                 break;
         }
