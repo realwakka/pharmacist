@@ -7,17 +7,27 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.RadioGroup;
+import android.widget.SimpleAdapter;
+import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.realwakka.organicpractice.data.ProblemInfoProvider;
+import com.realwakka.organicpractice.data.ProblemSmallGroup;
+
+import java.util.ArrayList;
 
 
 public class OptionActivity extends Activity {
     RadioGroup mProblemType;
     RadioGroup mOrderType;
     RadioGroup mProblemGroup;
-
+    Spinner mProblemSmallGroup;
     IncorrectDataSource mDataSource;
 
+    ProblemInfoProvider mProblemInfoProvider;
+    ArrayList<ProblemSmallGroup> mSmallList;
     private final String JSON_KEY="PRACTICE_OPTION";
 
     @Override
@@ -28,6 +38,14 @@ public class OptionActivity extends Activity {
         mProblemType = (RadioGroup) findViewById(R.id.option_problem);
         mOrderType = (RadioGroup) findViewById(R.id.option_order);
         mProblemGroup = (RadioGroup) findViewById(R.id.option_group);
+        mProblemSmallGroup = (Spinner) findViewById(R.id.option_small);
+        mSmallList = new ArrayList<ProblemSmallGroup>();
+        ArrayAdapter<ProblemSmallGroup> adapter = new ArrayAdapter<ProblemSmallGroup>(this,android.R.layout.simple_dropdown_item_1line,mSmallList);
+
+        mProblemSmallGroup.setAdapter(adapter);
+
+
+        mProblemInfoProvider = new ProblemInfoProvider(this);
 
         loadOption();
 
@@ -65,7 +83,7 @@ public class OptionActivity extends Activity {
 
     private PracticeOption getPracticeOption(){
         PracticeOption option = new PracticeOption(getIndexOfGroup(mProblemGroup)
-                ,getIndexOfGroup(mOrderType)==1,getIndexOfGroup(mProblemType)==1);
+                ,getIndexOfGroup(mOrderType)==1,getIndexOfGroup(mProblemType)==1,mProblemSmallGroup.getSelectedItemPosition());
         return option;
     }
 
@@ -108,6 +126,15 @@ public class OptionActivity extends Activity {
         }else{
             mProblemType.check(R.id.option_problem_default);
         }
+
+        ArrayList<ProblemSmallGroup> list = mProblemInfoProvider.getProblemGroups().get(option.getProblem_group()).getSmallGroups();
+        mSmallList.clear();
+        mSmallList.addAll(list);
+
+        ArrayAdapter<ProblemSmallGroup> adapter = (ArrayAdapter<ProblemSmallGroup>)mProblemSmallGroup.getAdapter();
+        adapter.notifyDataSetChanged();
+
+        mProblemSmallGroup.setSelection(option.getSmall_group());
     }
 
 

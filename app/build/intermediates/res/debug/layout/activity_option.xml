@@ -37,7 +37,27 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="생약학"/>
+                <RadioButton
+                    android:id="@+id/option_group_yak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="약물치료학"/>
             </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="출제범위"
+                android:textSize="50dp"/>
+
+            <Spinner
+                android:id="@+id/option_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
         </TableRow>
 
         <TableRow android:gravity="center">

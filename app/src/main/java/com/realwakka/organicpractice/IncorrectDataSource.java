@@ -21,7 +21,15 @@ public class IncorrectDataSource {
     private String[] allColumns = { DataHelper.COLUMN_ID,
             DataHelper.COLUMN_PROBLEM, DataHelper.COLUMN_GROUP };
 
+    private Context context;
+
+
+    public Context getContext() {
+        return context;
+    }
+
     public IncorrectDataSource(Context context) {
+        this.context = context;
         dbHelper = new DataHelper(context);
     }
 

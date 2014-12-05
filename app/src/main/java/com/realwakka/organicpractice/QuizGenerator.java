@@ -3,6 +3,10 @@ package com.realwakka.organicpractice;
 import android.content.Context;
 import android.util.Log;
 
+import com.realwakka.organicpractice.data.ProblemGroup;
+import com.realwakka.organicpractice.data.ProblemInfoProvider;
+import com.realwakka.organicpractice.data.ProblemSmallGroup;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -27,23 +31,24 @@ public class QuizGenerator {
         mOption = option;
         QuizList = new ArrayList<Incorrect>();
 
-        int group = mOption.getProblem_group();
-
-
-        Log.d("QuizGenerator","group"+group);
+        int group_no = mOption.getProblem_group();
+        int small_no = mOption.getSmall_group();
+        Log.d("QuizGenerator","group"+group_no);
 
         if(mOption.isIncorrect_list()){
-            QuizList = source.getIncorrectByGroup(group);
+            QuizList = source.getIncorrectByGroup(group_no);
             Log.d("QuizGenerator","load incorrect list");
 
         }else {
-            int count = QUIZ_CNT[group];
+            ProblemInfoProvider problemInfoProvider = new ProblemInfoProvider(source.getContext());
 
+            ArrayList<ProblemGroup> groups = problemInfoProvider.getProblemGroups();
+            ProblemGroup group = groups.get(group_no);
+            ProblemSmallGroup small = group.getSmallGroups().get(small_no);
 
-            for (int i = 1; i <= count; i++) {
-                QuizList.add(new Incorrect(0, group * 1000 + i, group));
-
-                Log.d("QuizGenerator",group * 1000 + i+"");
+            for (int i = small.getStart(); i <= small.getEnd(); i++) {
+                QuizList.add(new Incorrect(0, group_no * 1000 + i, group_no));
+                Log.d("QuizGenerator",group_no * 1000 + i+"");
             }
 
         }
@@ -55,6 +60,7 @@ public class QuizGenerator {
         CurrentOrder = -1;
 
     }
+
     private void shuffleList(List<Incorrect> list){
 
         List<Incorrect> tmp = new ArrayList<Incorrect>();

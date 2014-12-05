@@ -37,7 +37,6 @@ public class MainActivity extends Activity {
             e.printStackTrace();
         }
 
-
         Intent intent = getIntent();
 
         mOption = (PracticeOption)intent.getSerializableExtra("PRACTICE_OPTION");
