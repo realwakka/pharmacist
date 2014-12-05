@@ -1,0 +1,23 @@
+<groups>
+    <group name="유기" number="0" count="79">
+        <small name="전체" number="0" start="1" end="79"></small>
+    </group>
+
+    <group name="생약학" number="1" count="126">
+        <small name="전체" number="0" start="1" end="126"></small>
+    </group>
+
+    <group name="약물치료학" number="2" count="60">
+        <small name="전체" number="0" start="1" end="60"></small>
+        <small name="심혈관" number="1" start="1" end="10"></small>
+        <small name="호흡기,위장,간" number="2" start="11" end="21"></small>
+        <small name="신장,당뇨,갑상선" number="3" start="22" end="29"></small>
+        <small name="감염" number="4" start="30" end="36"></small>
+        <small name="정신과" number="5" start="37" end="44"></small>
+        <small name="관절,생식기" number="6" start="45" end="51"></small>
+        <small name="암" number="7" start="52" end="56"></small>
+        <small name="기타" number="8" start="57" end="60"></small>
+
+    </group>
+
+</groups>
