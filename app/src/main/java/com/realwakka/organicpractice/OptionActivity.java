@@ -4,9 +4,11 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.RadioGroup;
 import android.widget.SimpleAdapter;
@@ -38,13 +40,22 @@ public class OptionActivity extends Activity {
         mProblemType = (RadioGroup) findViewById(R.id.option_problem);
         mOrderType = (RadioGroup) findViewById(R.id.option_order);
         mProblemGroup = (RadioGroup) findViewById(R.id.option_group);
+        mProblemGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                ArrayList<ProblemSmallGroup> list = mProblemInfoProvider.getProblemGroups().get(getIndexOfGroup(group)).getSmallGroups();
+                ArrayAdapter<ProblemSmallGroup> adapter = new ArrayAdapter<ProblemSmallGroup>(OptionActivity.this,android.R.layout.simple_spinner_item,list);
+                mProblemSmallGroup.setAdapter(adapter);
+            }
+        });
+
+
+
         mProblemSmallGroup = (Spinner) findViewById(R.id.option_small);
         mSmallList = new ArrayList<ProblemSmallGroup>();
-        ArrayAdapter<ProblemSmallGroup> adapter = new ArrayAdapter<ProblemSmallGroup>(this,android.R.layout.simple_dropdown_item_1line,mSmallList);
+        ArrayAdapter<ProblemSmallGroup> adapter = new ArrayAdapter<ProblemSmallGroup>(this,android.R.layout.simple_spinner_item,mSmallList);
 
         mProblemSmallGroup.setAdapter(adapter);
-
-
         mProblemInfoProvider = new ProblemInfoProvider(this);
 
         loadOption();
@@ -62,6 +73,8 @@ public class OptionActivity extends Activity {
     @Override
     protected void onPause() {
         super.onPause();
+        Log.d("OptionActivity","SAVE OPTION...");
+
         saveOption(getPracticeOption());
     }
 
@@ -91,6 +104,7 @@ public class OptionActivity extends Activity {
         SharedPreferences pref = getSharedPreferences("PHARMACIST",MODE_PRIVATE);
         SharedPreferences.Editor editor = pref.edit();
         editor.putString(JSON_KEY,option.toJson());
+        Log.d("OptionActivity",option.toJson());
         editor.commit();
     }
 
@@ -100,8 +114,9 @@ public class OptionActivity extends Activity {
         String json = pref.getString(JSON_KEY,null);
 
         if(json!=null){
+            Log.d("OptionActivity","Load Option");
+            Log.d("OptionActivity",json);
             PracticeOption option = PracticeOption.fromJson(json);
-
             mapOption(option);
         }
     }
@@ -113,6 +128,9 @@ public class OptionActivity extends Activity {
                 break;
             case 1:
                 mProblemGroup.check(R.id.option_group_sang);
+                break;
+            case 2:
+                mProblemGroup.check(R.id.option_group_yak);
                 break;
         }
         if(option.isShuffle()){
@@ -128,13 +146,12 @@ public class OptionActivity extends Activity {
         }
 
         ArrayList<ProblemSmallGroup> list = mProblemInfoProvider.getProblemGroups().get(option.getProblem_group()).getSmallGroups();
-        mSmallList.clear();
-        mSmallList.addAll(list);
 
-        ArrayAdapter<ProblemSmallGroup> adapter = (ArrayAdapter<ProblemSmallGroup>)mProblemSmallGroup.getAdapter();
-        adapter.notifyDataSetChanged();
-
+        ArrayAdapter<ProblemSmallGroup> adapter = new ArrayAdapter<ProblemSmallGroup>(this,android.R.layout.simple_spinner_item,list);
+        mProblemSmallGroup.setAdapter(adapter);
         mProblemSmallGroup.setSelection(option.getSmall_group());
+
+
     }
 
 

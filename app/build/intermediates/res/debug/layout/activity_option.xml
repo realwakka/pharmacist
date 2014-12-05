@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="출제과목"
-            android:textSize="50dp"/>
+            android:textSize="40dp"/>
             <RadioGroup
                 android:id="@+id/option_group"
                 android:layout_width="wrap_content"
@@ -51,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="출제범위"
-                android:textSize="50dp"/>
+                android:textSize="40dp"/>
 
             <Spinner
                 android:id="@+id/option_small"
@@ -65,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="출제순서"
-            android:textSize="50dp"/>
+            android:textSize="40dp"/>
             <RadioGroup
                 android:id="@+id/option_order"
                 android:layout_width="wrap_content"
@@ -92,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="출제문제"
-                android:textSize="50dp"/>
+                android:textSize="40dp"/>
             <RadioGroup
                 android:id="@+id/option_problem"
                 android:layout_width="wrap_content"

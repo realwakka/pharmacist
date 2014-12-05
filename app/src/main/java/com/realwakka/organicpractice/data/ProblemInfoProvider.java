@@ -49,27 +49,27 @@ public class ProblemInfoProvider {
             else if(eventType == XmlResourceParser.START_TAG)
             {
                 if(xpp.getName().equals("group")){
-                    Log.d("ProblemInfoProvider",xpp.getName()+"start");
                     String name = xpp.getAttributeValue(null,"name");
+
                     int count = xpp.getAttributeIntValue(null,"count",0);
                     group = new ProblemGroup(name,new ArrayList<ProblemSmallGroup>(),count);
 
+                }else if(xpp.getName().equals("small")){
+
+                    String name = xpp.getAttributeValue(null,"name");
+
+                    int start = xpp.getAttributeIntValue(null,"start",0);
+
+
+                    int end = xpp.getAttributeIntValue(null,"end",0);
+                    ProblemSmallGroup small = new ProblemSmallGroup(name,start,end);
+                    group.getSmallGroups().add(small);
                 }
             }
             else if(eventType == XmlResourceParser.END_TAG)
             {
                 if(xpp.getName().equals("group")){
                     problemGroups.add(group);
-                }else if(xpp.getName().equals("small")){
-
-                    String name = xpp.getAttributeValue(null,"name");
-                    int start = xpp.getAttributeIntValue(null,"start",0);
-                    int end = xpp.getAttributeIntValue(null,"end",0);
-                    ProblemSmallGroup small = new ProblemSmallGroup(name,start,end);
-                    if(group==null){
-                        Log.d("ProblemInfoProvider","group null");
-                    }
-                    group.getSmallGroups().add(small);
                 }
             }
             else if(eventType == XmlResourceParser.TEXT)
