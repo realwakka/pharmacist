@@ -110,13 +110,15 @@ public class OptionActivity extends Activity {
 
     private void loadOption(){
         SharedPreferences pref = getSharedPreferences("PHARMACIST",MODE_PRIVATE);
-
         String json = pref.getString(JSON_KEY,null);
 
         if(json!=null){
             Log.d("OptionActivity","Load Option");
             Log.d("OptionActivity",json);
             PracticeOption option = PracticeOption.fromJson(json);
+            mapOption(option);
+        }else{
+            PracticeOption option = new PracticeOption(0,false,false,0);
             mapOption(option);
         }
     }
